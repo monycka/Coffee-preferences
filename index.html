@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container" id="main">
+      <header class="header">
+        <h1 id="title" class="text-center">Favorite Type of Coffee ☕️</h1>
+        <h2 id="tribute-info">Celebrating all the ways to drink coffee</h2>
+        <p id="title-description" class="description text-center">
+          Thank you for helping us
+        </p>
+      </header>
+      <form id="survey-form">
+        <div id="img-div">
+        <img id="image" src="https://img2.mashed.com/img/gallery/the-reason-you-may-want-to-drink-hot-coffee-instead-of-cold-brew/hot-coffee-has-an-edge-over-cold-brew-1587332976.jpg" alt="A cup of hot coffee and a glass of cold coffee">
+        <figcaption id="img-caption">A cup of hot coffee and a glass of cold coffee</figcaption>
+        </div>
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+
+        <div class="drink-coffee">
+          <p>Do you drink coffee?</p>
+          <label
+            ><input
+              type="radio"
+              name="yes"
+              id="yes"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="sometimes"
+              id="sometimes"
+              class="input-radio"
+            />Sometimes</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="no"
+              id="no"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+
+        <div class="form-group" id="user-recommend">
+          <p>How often do you drink coffee?</p>
+          <label
+            ><input
+              name="user-recommend"
+              value="daily"
+              type="radio"
+              class="input-radio"
+              checked
+            />Daily</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="twice"
+              type="radio"
+              class="input-radio"
+            />Two to three times a week</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="once"
+              type="radio"
+              class="input-radio"
+            />Once a week</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              value="never"
+              type="radio"
+              class="input-radio"
+            />Never</label
+          >
+        </div>
+
+        <div class="form-group" id="cold-coffee">
+          <p>What is your favorite type of cold coffee?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="iced">Iced Coffee</option>
+            <option value="iced-espresso">Iced Espresso</option>
+            <option value="brew">Cold Brew Coffee</option>
+            <option value="mocha">Frappè Coffee</option>
+            <option value="frappuccino">Frappuccino</option>
+            <option value="nitro">Nitro</option>
+            <option value="mazagran">Mazagran</option>
+            <option value="none">None</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="hot-coffee">
+          <p>What is your favorite type of hot coffee?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="black">Black Coffee</option>
+            <option value="brew">Brew Coffee</option>
+            <option value="lait">Cafè Au Lait</option>
+            <option value="americano">Caffè Americano</option>
+            <option value="mocha">Caffè Mocha</option>
+            <option value="cappuccino">Cappuccino</option>
+            <option value="cuban">Cuban Espresso</option>
+            <option value="espresso">Espresso</option>
+            <option value="irish">Irish Coffee</option>
+            <option value="latte">Latte</option>
+            <option value="macchiato">Macchiato</option>
+            <option value="none">None</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="toppings">
+          <p>
+            What do you like to add to your coffee?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="caramel"
+              type="checkbox"
+              class="input-checkbox"
+            />Caramel</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="chocolate"
+              type="checkbox"
+              class="input-checkbox"
+            />Chocolate</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="cinnamon"
+              type="checkbox"
+              class="input-checkbox"
+            />Cinnamon</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="cream"
+              type="checkbox"
+              class="input-checkbox"
+            />Cream</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="half"
+              type="checkbox"
+              class="input-checkbox"
+            />Half & Half</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="marshmallow"
+              type="checkbox"
+              class="input-checkbox"
+            />Marshmallows</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="milk"
+              type="checkbox"
+              class="input-checkbox"
+            />Milk</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="milk-plant"
+              type="checkbox"
+              class="input-checkbox"
+            />Milk: Plant Based</label
+          >
+          <label
+          ><input
+            name="prefer"
+            value="nutmeg"
+            type="checkbox"
+            class="input-checkbox"
+          />Nutmeg</label
+        >
+          <label
+            ><input
+              name="prefer"
+              value="sugar"
+              type="checkbox"
+              class="input-checkbox"
+            />Sugar</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="sugar-free"
+              type="checkbox"
+              class="input-checkbox"
+            />Sugar-Free Sweetner</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="syrup"
+              type="checkbox"
+              class="input-checkbox"
+            />Syrup</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="whipped"
+              type="checkbox"
+              class="input-checkbox"
+            />Whipped Cream</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="other-comments"
+              type="checkbox"
+              class="input-checkbox"
+            />Other: Please tell us in the comments</label
+          >
+        
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+
+        <p>
+          Thank you for answering our survey! To learn more about coffee please visit
+          <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank" id="tribute-link"> this wikipedia link</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
